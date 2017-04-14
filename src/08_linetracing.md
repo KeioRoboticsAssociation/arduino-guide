@@ -89,17 +89,17 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH); // turn the LED on with voltage level HIGH
   int speedHigh = 64;
   int speedLow = 0;
-  float right = analogRead(A0);
-  float left = analogRead(A1);
-  if (left / right < 1.5) {
+  int right = analogRead(A0);
+  int left = analogRead(A1);
+  if (left < right * 1.5) {
     analogWrite(6, speedHigh);
   } else {
     analogWrite(6, speedLow);
   }
-  if (right / left < 1.5) {
+  if (right < left * 1.5) {
     analogWrite(5, speedHigh);
   } else {
     analogWrite(5, speedLow);
@@ -111,7 +111,7 @@ void loop() {
   Serial.print(left);
   Serial.print("\n");
   
-  digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW); // turn the LED off with voltage level LOW
   delay(1); // wait for a millisecond
 }
 ```
