@@ -13,7 +13,7 @@ Arduino IDEの画面に打ち込んでほしい。プログラミング言語に
 ```cpp
 void setup() {
   Serial.begin(9600);
-  Serial.print("Hello, World!);
+  Serial.print("Hello, World!");
 }
 void loop() {
 }
