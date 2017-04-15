@@ -110,7 +110,7 @@ void loop() {
 }
 ```
 
-練習問題: 上のコードを`Hello, World!`ではなく`Hello, Android World!`と
+練習問題: 上のコードを`Hello, World!`ではなく`Hello, Arduino World!`と
 二回表示するように変更してみよう。
 
 今回の例では文字列型のデータを扱っているが、別な型のデータも同様に変数に
