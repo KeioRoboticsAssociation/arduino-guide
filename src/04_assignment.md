@@ -21,9 +21,7 @@ void loop() {
 これを実行すると次の出力が得られる。
 
 ```
-1
-2
-3
+123
 ```
 
 `Serial.print`に渡される`count`変数が毎回変わっていることが見て取れる。
@@ -127,7 +125,7 @@ void start() {
   int mikanPrice = 80;
   int takashiSaifu = 600;
   int mikanKosuu = (takashiSaifu - ringoPrice * 5) / mikanPrice;
-  Serial.print(nokoriMoney);
+  Serial.print(mikanKosuu);
 }
 void loop() {
 }
