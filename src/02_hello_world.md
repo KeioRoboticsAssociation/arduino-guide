@@ -23,8 +23,11 @@ void loop() {
 これはとりあえず「おまじない」と捉えて打ち込んでみてほしい。
 終わり次第、メニューバーの「Tools」→「Board」で「Arduino Nano」、
 「Tools」→「Processor」で「ATmega168」が選択されていることを確認したあと
-左上のチェックマークを押してほしい。
-正しく入力できていたら、次のようなメッセージが下に現れる。
+パソコンにArduinoを接続し、LEDが点灯したことを確認したところで
+<!-- TODO: check color of Arduino LED -->
+左上のチェックマークのとなりにある右矢印のマークをクリックしてほしい。
+正しく入力できていたら、次のようなメッセージが下に現れた後、
+Arduinoにプログラムが書き込まれる。
 
 ```
 Sketch uses 1,420 bytes (9%) of program storage space. Maximum is 14,336 bytes.
@@ -40,7 +43,9 @@ Global variables use 196 bytes (19%) of dynamic memory, leaving 828 bytes for lo
 見本コードと打ち込んだコードをよく見比べて間違いを探そう！
 どうしてもわからなかったら遠慮なく先輩に聞こう！彼らは多分暇だ。
 
-動いたことを確認したら、コードの構造を詳しく見ていこう。
+コンパイルと書き込みが上手く行ったところで出力を確認してみよう。
+「Tools」→「Serial Monitor」をクリックすると画面が出てきて`Hello, World!`と
+表示されるはずだ。動いたことを確認したらコードの構造を詳しく見ていこう。
 
 ```cpp
 void setup() {
