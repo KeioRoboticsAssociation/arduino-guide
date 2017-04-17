@@ -6,5 +6,5 @@ out.html: src/*.md
 		--css src/css/custom.css \
 		--output out.html
 clean:
-	rm dist/out.*
+	rm out.*
 
