@@ -3,8 +3,7 @@
 ## ビルド
 
 ```sh
-make
-chromium out.html # -> 印刷からPDF出力
+nix-shell --run make
 ```
 
 ## TODO

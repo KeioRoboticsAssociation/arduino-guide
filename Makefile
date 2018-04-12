@@ -1,3 +1,5 @@
+out.pdf: out.html
+	chromium --headless --disable-gpu --print-to-pdf=./out.pdf ./out.html
 out.html: src/*.md
 	pandoc src/*.md \
 		--standalone \
